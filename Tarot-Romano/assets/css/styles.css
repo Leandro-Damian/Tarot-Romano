@@ -895,7 +895,6 @@ img {
 
 /* For large devices */
 @media screen and (min-width: 1150px){
-
   .container{
     margin-inline: auto;
   }
