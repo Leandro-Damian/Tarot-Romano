@@ -35,8 +35,8 @@ const shadowHeader = () =>{
 }
 window.addEventListener('scroll', shadowHeader)
 
-/*=============== SWIPER POPULAR ===============*/
-const swiperPopular = new Swiper('.popular__swiper', {
+/*=============== SWIPER THERAPY ===============*/
+const swiperTherapy = new Swiper('.therapy__swiper', {
   loop: true,
   grabCursor: true,
   slidesPerView: 'auto',
@@ -82,8 +82,7 @@ const sr = ScrollReveal({
     // reset : true, // Animations repeat
 })
 
-sr.reveal(`.home__data, .popular__container, .footer`)
+sr.reveal(`.home__data, .therapy__container, .footer`)
 sr.reveal(`.home__tarot-img`, {delay: 700, distance: '100px', origin: 'right'})
-sr.reveal(`.about__data, .recipe__list, .contact__data`, {origin: 'right'})
-sr.reveal(`.about__img, .recipe__img, .contact__image`, {origin: 'left'})
-sr.reveal(`.products__card`, {interval: 100})
+sr.reveal(`.about__data, .reading__list, .contact__data`, {origin: 'right'})
+sr.reveal(`.about__img, .reading__img, .contact__image`, {origin: 'left'})

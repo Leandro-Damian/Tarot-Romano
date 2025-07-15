@@ -349,22 +349,22 @@ img {
   background-color: var(--body-color);
 }
 
-/*=============== TERAPIA HOLÍSTICA ===============*/
-.popular__container{
+/*=============== THERAPY ===============*/
+.therapy__container{
   row-gap: 2rem;
   padding-bottom: 2rem;
 }
 
-.popular__data{
+.therapy__data{
   position: relative;
   text-align: start;
 }
 
-.popular__description{
+.therapy__description{
   margin-bottom: 2rem;
 }
 
-.button-popular{
+.button-therapy{
   display: inline-flex;
   justify-content: center;
   background-color: var(--first-color);
@@ -375,11 +375,11 @@ img {
   transition: background-color .4s;
 }
 
-.button-popular:hover{
+.button-therapy:hover{
   background-color: var(--body-second);
 }
 
-.popular__img{
+.therapy__img{
   width: 300px;
   justify-self: center;
   padding-top: 3rem;
@@ -390,7 +390,7 @@ img {
   display: none;
 }
 
-.popular__title{
+.therapy__title{
   font-size: var(--h3-font-size);
   color: var(--first-color);
   margin-top: 2rem;
@@ -399,115 +399,41 @@ img {
   transition: opacity .4s;
 }
 
-/* Swiper class */
-/* .swiper{
-  margin-inline: initial;
-  overflow: visible;
-} */
-
-/* :is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__img{
-  transform: scale(1) rotate(0);
-} */
-
-/* :is(.swiper-slide-active, .swiper-slide-duplicate-active) .popular__title{
-  opacity: 1;
-} */
-
-/*=============== RECIPE ===============*/
-.recipe{
+/*=============== READING ===============*/
+.reading{
   background-color: var(--body-second);
 }
 
-.recipe__container{
+.reading__container{
   row-gap: 2rem;
   padding-bottom: 0% 2rem;
 }
 
-.recipe__image{
+.reading__image{
   width: 60px;
   filter: var(--shadow-small-img);
 }
 
-.recipe__name{
+.reading__name{
   font-size: var(--normal-font-size);
   margin-bottom: .25rem;
 }
 
-.recipe__description{
+.reading__description{
   font-size: var(--small-font-size);
 }
 
-.recipe__ingredient{
+.reading__ingredient{
   display: flex;
   align-items: center;
   column-gap: .75rem;
 }
 
-.recipe__img{
+.reading__img{
   width: 320px;
   justify-self: center;
   filter: var(--shadow-big-img);
   border-radius: 1.5rem;
-}
-
-/*=============== PRODUCTS ===============*/
-.products__container{
-  padding-top: 3.5rem;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem 1.5rem;
-}
-
-.products__card{
-  position: relative;
-  background-color: var(--container-color);
-  padding: 5rem .75rem 1.25rem .75rem;
-  border-radius: 1.5rem;
-  box-shadow: 0 8px 24px hsla(353, 100%, 8%, .1);
-}
-
-.products__img{
-  width: 120px;
-  position: absolute;
-  top: -3.5rem;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  filter: var(--shadow-small-img);
-  transition: transform .4s;
-}
-
-.products__name{
-  font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
-}
-
-.products__price{
-  font-family: var(--second-font);
-  font-size: var(--h1-font-size);
-  line-height: 120%;
-  color: var(--first-color);
-}
-
-.products__button{
-  position: absolute;
-  right: .75rem;
-  bottom: 1.25rem;
-  background-color: var(--first-color);
-  color: var(--white-color);
-  padding: 4px;
-  border-radius: 1.5rem;
-  display: inline-flex;
-  box-shadow: 0 4px 16px hsla(353, 100%, 40%, .4);
-  cursor: pointer;
-  transition: background-color .4s;
-}
-
-.products__button:hover{
-  background-color: var(--first-color-alt);
-}
-
-.products__card:hover .products__img{
-  transform: translateY(-.5rem);
 }
 
 /*=============== CONTACT ===============*/
@@ -700,8 +626,8 @@ img {
 @media screen and (min-width: 576px){
   .home__container,
   .about__container,
-  .popular__container,
-  .recipe__container{
+  .therapy__container,
+  .reading__container{
     grid-template-columns: 390px;
     justify-content: center;
   }
@@ -810,23 +736,23 @@ img {
     bottom: 2rem;
   }
 
-  .popular__container{
+  .therapy__container{
     grid-template-columns: 360px 350px;
     align-items: center;
     column-gap: 4rem;
   }
-  .popular__img{
+  .therapy__img{
     order: 1;
     width: 350px;
   }
 
-  .recipe__container{
+  .reading__container{
     grid-template-columns: 360px 350px;
     align-items: center;
     column-gap: 6rem;
     padding-bottom: 3rem;
   }
-  .recipe__img{
+  .reading__img{
     width: 350px;
   }
 
@@ -971,38 +897,38 @@ img {
     bottom: 2rem;
   }
 
-  .popular__container{
+  .therapy__container{
     grid-template-columns: 450px 440px;
     align-items: center;
     column-gap: 6rem;
   }
-  .popular__img{
+  .therapy__img{
     order: 1;
     width: 450px;
   }
-  .popular__data{
+  .therapy__data{
     text-align: initial;
   }
 
-  .recipe__container{
+  .reading__container{
     grid-template-columns: 360px 550px;
     align-items: center;
     column-gap: 6rem;
     padding-bottom: 3rem;
   }
-  .recipe__ingredient{
+  .reading__ingredient{
     column-gap: 1.5rem;
   }
-  .recipe__image{
+  .reading__image{
     width: 80px;
   }
-  .recipe__name{
+  .reading__name{
     font-size: var(--h3-font-size);
   }
-  .recipe__description{
+  .reading__description{
     font-size: var(--normal-font-size);
   }
-  .recipe__img{
+  .reading__img{
     width: 550px;
   }
 
